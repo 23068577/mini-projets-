@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog Collaboratif</title>
+
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers un fichier CSS -->
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Blog Collaboratif pour Étudiants Développeurs</h1>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+
+                <li><a href="login.html">Connexion</a></li>
+
+                <li><a href="signup.html">Inscription</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <section id="recent-articles">
+
+            <h2>Articles Récents</h2>
+
+            <article>
+
+                <h3><a href="article.html?id=1">Titre de l'article 1</a></h3>
+
+                <p>Auteur : mariem teslem</p>
+
+                <p>Résumé de l'article...</p>
+
+            </article>
+
+            <article>
+
+                <h3><a href="article.html?id=2">Titre de l'article 2</a></h3>
+
+                <p>Auteur : mariem teslem</p>
+
+                <p>Résumé de l'article...</p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>&copy; 2024 Blog Collaboratif</p>
+
+    </footer>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Titre de l'article</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Blog Collaboratif</h1>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+
+                <li><a href="login.html">Connexion</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <article>
+
+            <h2>Titre de l'article</h2>
+
+            <p>Auteur : mariem teslem</p>
+
+            <p>Publié le : 20 novembre 2024</p>
+
+            <p>Contenu complet de l'article...</p>
+
+        </article>
+
+
+
+        <section id="comments">
+
+            <h3>Commentaires</h3>
+
+            <ul>
+
+                <li>
+
+                    <p><strong>mariem teslem</strong>: Très bon article !</p>
+
+                    <p>Date : 21 novembre 2024</p>
+
+                </li>
+
+                <li>
+
+                    <p><strong>zeinebou housseynou</strong>: Merci pour ces informations !</p>
+
+                    <p>Date : 22 novembre 2024</p>
+
+                </li>
+
+            </ul>
+
+
+
+            <form action="add_comment.php" method="POST">
+
+                <textarea name="comment" placeholder="Ajoutez un commentaire..." required></textarea>
+
+                <button type="submit">Envoyer</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>&copy; 2024 Blog Collaboratif</p>
+
+    </footer>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscription</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Inscription</h1>
+
+    </header>
+
+
+
+    <main>
+
+        <form action="signup.php" method="POST" enctype="multipart/form-data">
+
+            <label for="name">Nom complet :</label>
+
+            <input type="text" id="name" name="name" required>
+
+
+
+            <label for="email">Email :</label>
+
+            <input type="email" id="email" name="email" required>
+
+
+
+            <label for="password">Mot de passe :</label>
+
+            <input type="password" id="password" name="password" required>
+
+
+
+            <label for="bio">Bio :</label>
+
+            <textarea id="bio" name="bio"></textarea>
+
+
+
+            <label for="skills">Compétences principales :</label>
+
+            <input type="text" id="skills" name="skills">
+
+
+
+            <label for="photo">Photo de profil :</label>
+
+            <input type="file" id="photo" name="photo" accept="image/*">
+
+
+
+            <button type="submit">S'inscrire</button>
+
+        </form>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>&copy; 2024 Blog Collaboratif</p>
+
+    </footer>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connexion</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Connexion</h1>
+
+    </header>
+
+
+
+    <main>
+
+        <form action="login.php" method="POST">
+
+            <label for="email">Email :</label>
+
+            <input type="email" id="email" name="email" required>
+
+
+
+            <label for="password">Mot de passe :</label>
+
+            <input type="password" id="password" name="password" required>
+
+
+
+            <button type="submit">Se connecter</button>
+
+        </form>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>&copy; 2024 Blog Collaboratif</p>
+
+    </footer>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Publier un Article</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Publier un Article</h1>
+
+    </header>
+
+
+
+    <main>
+
+        <form action="publish_article.php" method="POST">
+
+            <label for="title">Titre :</label>
+
+            <input type="text" id="title" name="title" required>
+
+
+
+            <label for="content">Contenu :</label>
+
+            <textarea id="content" name="content" required></textarea>
+
+
+
+            <label for="category">Catégorie :</label>
+
+            <select id="category" name="category" required>
+
+                <option value="1">Programmation</option>
+
+                <option value="2">Technologie</option>
+
+            </select>
+
+
+
+            <button type="submit">Publier</button>
+
+        </form>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>&copy; 2024 Blog Collaboratif</p>
+
+    </footer>
+
+</body>
+
+</html>
+
